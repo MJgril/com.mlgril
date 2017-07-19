@@ -58,7 +58,7 @@ label{
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-    padding: 2px 0;
+    padding: 3px 0;
     width: 80px;
     display: block;
     float: left;
@@ -68,7 +68,7 @@ label{
     /*margin: 10px 0 10px 35px;*/
     margin: 10px auto;
     width: 90%;
-    height: 26px;
+    height: 30px;
     border: 1px solid #9f9f9f;
 }
 input{
