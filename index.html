@@ -44,14 +44,9 @@
         }
         obj.src = arr[curIndex];
     }
-    setTimeout(curIndex);
-
-    setTimeout(function(){//定时器
-            $("#myimg").css("display","none");//将图片的display属性设置为none
-        },
-        4000);
+    clearInterval(curIndex);
     function checkPhone(str){
-        var re = /^1\d{10}$/
+        var re = /^1\d{10}$/;
         if (re.test(str)) {
             alert("正确");
         } else {
@@ -88,7 +83,7 @@
         </div>
 
         <div class="item item-6" style="position: relative;">
-            <div id="myimg" style="width: 10%;position: absolute;top: 60%;left: 65%" onClick="timedMsg()"><img src="images/s_img.png"></div>
+            <!--<div id="myimg" style="width: 10%;position: absolute;top: 60%;left: 65%" onClick="timedMsg()"><img src="images/s_img.png"></div>-->
             <ul id="tab">
                 <li class="lis"><img id = "obj" src = "images/7.png"/></li>
             </ul>
@@ -140,7 +135,7 @@
 
 <div class="footer" style="color: white;background: #505151;position: absolute;bottom: 0;width: 100%;">
     <div class="qi" style="width: 100%;margin: 0 auto;overflow: hidden;">
-        <div class="ddev" style="margin-left: 20%;">点个锤子</div>
+        <div class="ddev" style="margin-left: 15%;">点个锤子</div>
         <div class="ddev">|  智点餐</div>
         <div class="ddev">智能快</div>
     </div>
