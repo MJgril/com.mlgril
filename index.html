@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>绿钻“高富帅”行动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<script type="text/javascript">
+    var curIndex = 0;
+    var timeInterval = 4000;
+    var arr = new Array();
+    arr[0] = "images/7.png";
+    arr[1] = "images/8.png";
+    arr[2] = "images/9.png";
+    arr[3] = "images/6.png";
+    arr[4] = "images/5.png";
+    arr[5] = "images/4.png";
+    arr[6] = "images/3.png";
+    arr[7] = "images/2.png";
+    arr[8] = "images/1.png";
+    arr[9] = "images/10.png";
+    arr[10] = "images/13.png";
+    arr[11] = "images/12.png";
+    arr[12] = "images/11.png";
+    arr[13] = "images/21.png";
+    arr[14] = "images/20.png";
+    arr[15] = "images/19.png";
+    arr[16] = "images/18.png";
+    arr[17] = "images/17.png";
+    arr[18] = "images/16.png";
+    arr[19] = "images/15.png";
+    arr[20] = "images/26.png";
+    arr[21] = "images/18.png";
+    arr[22] = "images/18.png";
+    setInterval(changeImg,timeInterval);
+    function changeImg() {
+        var obj = document.getElementById("obj");
+        if (curIndex == arr.length-1) {
+            curIndex = 0;
+        } else {
+            curIndex += 1;
+        }
+        obj.src = arr[curIndex];
+    }
+    setTimeout(curIndex);
+
+    setTimeout(function(){//定时器
+            $("#myimg").css("display","none");//将图片的display属性设置为none
+        },
+        4000);
+    function checkPhone(str){
+        var re = /^1\d{10}$/
+        if (re.test(str)) {
+            alert("正确");
+        } else {
+            alert("错误");
+        }
+    }
+
+</script>
+<body class="bodybox">
+<script>
+    window.debug = true;
+</script>
+<div class="head">
+    <div class="wrap" id="wrap">
+
+        <div class="item item-1">
+            <img src="images/first.png" alt="">
+        </div>
+
+        <div class="item item-2">
+            <img src="images/two.png" alt="#">
+        </div>
+
+        <div class="item item-3">
+            <img src="images/three.png" alt="#">
+        </div>
+
+        <div class="item item-4">
+            <img src="images/four.png" alt="#">
+        </div>
+
+        <div class="item item-5">
+            <img src="images/five.png" alt="#">
+        </div>
+
+        <div class="item item-6" style="position: relative;">
+            <div id="myimg" style="width: 10%;position: absolute;top: 60%;left: 65%" onClick="timedMsg()"><img src="images/s_img.png"></div>
+            <ul id="tab">
+                <li class="lis"><img id = "obj" src = "images/7.png"/></li>
+            </ul>
+        </div>
+
+        <div class="item item-7">
+            <img src="images/28.png" alt="#">
+        </div>
+
+        <div class="item item-8">
+            <img src="images/29.png" alt="#">
+        </div>
+
+        <div class="item item-9">
+            <img src="images/27.png" alt="#">
+        </div>
+
+        <div class="item item-10">
+            <img src="images/35.png" alt="#">
+        </div>
+
+        <div class="item item-11">
+            <img src="images/30.png" alt="#">
+        </div>
+
+        <div class="item item-12">
+            <img src="images/31.png" alt="#">
+        </div>
+        <div class="item item-13">
+            <img src="images/32.png" alt="#">
+            <form action="#">
+                <div class="userName">
+                <label>姓名</label>
+                <input type="text" name="username" /><br>
+                </div>
+                <div class="userName">
+                <label>手机号码</label>
+                <input type="phone" name="phon" onclick="checkPhone()"/><br>
+                </div>
+                <div class="button">提交</div>
+                <!--<input type="submit" value="登陆"/>-->
+            </form>
+
+            <div class="top_img">
+            <img src="images/33.png">
+            </div>
+        </div>
+    </div>
+
+<div class="footer" style="color: white;background: #505151;position: absolute;bottom: 0;width: 100%;">
+    <div class="qi" style="width: 100%;margin: 0 auto;overflow: hidden;">
+        <div class="ddev" style="margin-left: 20%;">点个锤子</div>
+        <div class="ddev">|  智点餐</div>
+        <div class="ddev">智能快</div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="js/iSlider.js"></script>
+<script>
+    //用法
+    var myslider=new iSlider({
+        wrap:'#wrap',
+        item:'.item',
+        onslide:function (index) {
+            if (index == 12) {
+                document.getElementById('J_joinNum').innerHTML=parseInt(Math.random()*10000);
+            }
+        }
+    });
+    console.info(myslider);
+</script>
+</body>
+</html>

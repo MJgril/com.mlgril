@@ -1,0 +1,104 @@
+.head{
+    height: 100%;
+}
+.wrap{.
+height: 100%;
+}
+div{
+    overflow: hidden;
+}
+img{width: 100%;}
+body{margin: 0;background: #ffffff;}
+.item-1 img{width:90%;margin-top: 5px;margin-left: 20px;}
+.item-2 img{width:96%;margin-top: 20px;margin-left: 20px;}
+.item-3 img{width:86%;margin-top: 10px;margin-left: 7%;}
+.item-4 img{width:86%;margin-top: 10px;margin-left: 7%;}
+.item-5 img{width:68%;margin-top: 10px;margin-left: 15%;}
+.item-7 img{width:90%;margin-top: 10px;clear: both;margin-left: 3%;}
+.item-8 img{width:88%;margin-top: 10px;margin-left: 3%;}
+.item-9 img{width:90%;margin-top: 20px;margin-left: 3%;}
+.item-10 img{width:88%;margin-top: 20px;margin-left: 6%;}
+.item-11 img{width:90%;margin-top: 20px;margin-left: 5%;}
+.item-12 img{width:94%;margin-top: 35px;margin-left: 4%;}
+.item-13 img{width:85%;margin-top: 10px;margin-left:10%;}
+.top_img img{
+    margin-left: 10%!important;
+    width: 85%;
+}
+ul{
+    height:100%!important;
+    white-space:nowrap!important;
+    padding:0;
+    margin: 10% 9% 0 15%;
+    background: url("../images/bg.png")no-repeat;
+    background-size: 90%;
+    overflow: hidden;
+}
+ul li img{
+    width: 75%;
+    height: 100%;
+    border-radius: 2px;
+    margin-left: 9%;
+}
+ul li{
+    list-style: none;
+    padding: 18% 0 0 0;
+    /*margin-left: 6%;*/
+    overflow:hidden;
+    border-radius: 5px;
+}
+form{
+    border: 1px solid #9f9f9f;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+label{
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+    width: 80px;
+    display: block;
+    float: left;
+    background-color: #404040;
+}
+.userName{
+    margin: 10px 0 10px 35px;
+    width: 90%;
+}
+input{
+    /*border: 0;*/
+    width: 150px;
+    height: 25px;
+}
+.button{
+    width: 20%;
+    background-color: #ff0000;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    border-radius: 5px;
+    line-height: 23px;
+}
+.ddev{
+    width: 80px;
+    float: left;
+    text-align: center;
+    margin: 10px 0;
+}
+#myimg{
+    position:absolute;
+    animation: myfirst 5s;
+    -moz-animation: myfirst 5s;	/* Firefox */
+    -webkit-animation: myfirst 10s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 5s;	/* Opera */
+    -webkit-animation-iteration-count:2;
+    -webkit-animation-fill-mode:forwards;
+}
+@keyframes myfirst
+{
+    from {right:10px;}
+    to {left:100px;}
+}
