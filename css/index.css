@@ -69,10 +69,10 @@ label{
     margin: 10px auto;
     width: 90%;
     height: 26px;
-    /*border: 1px solid red;*/
+    border: 1px solid #9f9f9f;
 }
 input{
-    /*border: 0;*/
+    border: 0;
     width: 150px;
     height: 99%;
 }
