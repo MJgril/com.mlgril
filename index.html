@@ -11,31 +11,36 @@
             max-width: 100%;
             height: 100%;
         }
-        .item-1 img{width: 100%;height: 100%;}
-        .item-3 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-4 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-5 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-6 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-7 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-8 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-9 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-10 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-11 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-12 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-13 img{width: 100%;height: 99%;padding-top: 10px;}
-        .item-14 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-1 img{width: 100%;height: 95%;}
+        .item-2 img{width: 100%;height: 95%;}
+        .item-3 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-4 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-5 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-6 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-7 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-8 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-9 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-10 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
+        .item-11 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 10px;}
+        .item-12 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 10px;}
+        .item-13 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 10px;}
+        .item-14 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 10px;}
         .item-15 img{width: 100%;height: 100%;overflow-y: scroll;}
         .top_img img{
             margin-left: 10%!important;
             width: 85%;
             padding-top: 10px;
         }
+        .foot_img img{
+            margin-left: 10%!important;
+            width: 85%;
+        }
         form{
             border: 1px solid #9f9f9f;
             padding: 10px 0;
             border-radius: 10px;
             width: 90%;
-            margin: 20px auto;
+            margin: 10px auto;
             background-color: #f2f2f2;
         }
         label{
@@ -59,7 +64,7 @@
             border: 0;
             width: 200px;
             background-color: #f2f2f2;
-           /*line-height: 26px;*/
+            /*line-height: 26px;*/
             /*padding-top: 1px;*/
         }
         .button{
@@ -96,8 +101,8 @@
         };
     }
     getInfo();
-//    console.log(document.documentElement.clientHeight ,window.innerHeight, document.body.clientHeight)
-//    document.body.style.height=window.innerHeight-0+'px';
+    //    console.log(document.documentElement.clientHeight ,window.innerHeight, document.body.clientHeight)
+    //    document.body.style.height=window.innerHeight-0+'px';
 
     window.onload=function() {
         var oBtn = document.getElementById('btn');
@@ -169,7 +174,7 @@
     </div>
 
     <div class="item item-3">
-        <img src="images/3.png" alt="图3">
+        <img src="images/3.png" alt="#">
     </div>
 
     <div class="item item-4">
@@ -230,12 +235,15 @@
             <p></p>
             <div class="button" id="btn" onclick="loadXMLDoc()">提交</div>
         </form>
-
         <div class="foot_img">
             <img src="images/foot.png">
         </div>
     </div>
-</div>
+    </div>
+    <div class="footer" style="position: absolute;bottom: 0;width: 100%;height: 35px;">
+        <img src="images/footer.png" alt="#" style="width: 100%;">
+    </div>
+
 <script type="text/javascript" src="js/iSlider.js"></script>
 
 <script type="text/javascript">
@@ -252,7 +260,6 @@
         }
     });
     console.info(myslider)
-
 
 </script>
 </body>
