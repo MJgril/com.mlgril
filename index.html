@@ -2,123 +2,131 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
-    <title>绿钻“高富帅”行动</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="css/index.css">
+    <title>你家互联网科技</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style type="text/css">
+        body{padding: 0;margin: 0;}
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+        .item-1 img{width: 100%;height: 100%;}
+        .item-3 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-4 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-5 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-6 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-7 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-8 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-9 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-10 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-11 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-12 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-13 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-14 img{width: 100%;height: 99%;padding-top: 10px;}
+        .item-15 img{width: 100%;height: 90%;overflow-y: scroll;}
+        .top_img img{
+            margin-left: 10%!important;
+            width: 85%;
+            padding-top: 10px;
+        }
+        form{
+            border: 1px solid #9f9f9f;
+            padding: 10px 0;
+            border-radius: 10px;
+            width: 90%;
+            margin: 20px auto;
+        }
+        label{
+            font-size: 18px;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px 0;
+            width: 80px;
+            display: block;
+            float: left;
+            background-color: #404040;
+        }
+        .userName{
+            /*margin: 10px 0 10px 35px;*/
+            margin: 10px auto;
+            width: 90%;
+            height: 30px;
+            border: 1px solid red;
+        }
+        input{
+            border: 0;
+           /*line-height: 26px;*/
+            /*padding-top: 1px;*/
+        }
+        .button{
+            width: 20%;
+            background-color: #fe0404;
+            text-align: center;
+            margin: 0 auto;
+            color: white;
+            border-radius: 5px;
+            line-height: 23px;
+        }
+        .ddev{
+            width: 80px;
+            float: left;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        p{
+            clear: both;
+            display: block;
+            font-size: 14px;
+            padding-left: 100px;
+        }
+    </style>
 </head>
-<script type="text/javascript">
-        var curIndex = 0;
-        var timeInterval = 3000;
-        var arr1 = new Array();
-        arr1[0] = "images/7.png";
-        arr1[1] = "images/8.png";
-        arr1[2] = "images/9.png";
-        arr1[3] = "images/6.png";
-        setInterval(changeImg,timeInterval);
-        function changeImg() {
-            var obj = document.getElementById("obj");
-            if (curIndex == arr1.length-1) {
-                curIndex = 0;
-            } else {
-                curIndex += 1;
-            }
-            obj.src = arr1[curIndex];
-        }
-        clearInterval(curIndex);
-
-        var aurIndex = 0;
-        var timeInterva2 = 3000;
-        var arr2 = new Array();
-        arr2[0] = "images/5.png";
-        arr2[1] = "images/4.png";
-        arr2[2] = "images/3.png";
-        arr2[3] = "images/2.png";
-        setInterval(changeImg1,timeInterva2);
-        function changeImg1() {
-            var obj = document.getElementById("abj");
-            if (aurIndex == arr2.length-1) {
-                aurIndex = 0;
-            } else {
-                aurIndex += 1;
-            }
-            obj.src = arr2[aurIndex];
-        }
-        clearInterval(aurIndex);
-
-        var surIndex = 0;
-        var timeInterva3 = 3000;
-        var arr3 = new Array();
-        arr3[0] = "images/1.png";
-        arr3[1] = "images/10.png";
-        arr3[2] = "images/13.png";
-        arr3[3] = "images/12.png";
-        arr3[4] = "images/11.png";
-        arr3[5] = "images/21.png";
-        arr3[6] = "images/20.png";
-        setInterval(changeImg2,timeInterva3);
-        function changeImg2() {
-            var obj = document.getElementById("sbj");
-            if (surIndex == arr3.length-1) {
-                surIndex = 0;
-            } else {
-                surIndex += 1;
-            }
-            obj.src = arr3[surIndex];
-        }
-        clearInterval(surIndex);
-
-        var durIndex = 0;
-        var timeInterva4 = 3000;
-        var arr7 = new Array();
-        arr7[0] = "images/19.png";
-        arr7[1] = "images/18.png";
-        arr7[2] = "images/17.png";
-        arr7[3] = "images/16.png";
-        arr7[4] = "images/15.png";
-        arr7[5] = "images/26.png";
-        arr7[6] = "images/20.png";
-        setInterval(changeImg3,timeInterva4);
-        function changeImg3() {
-            var obj = document.getElementById("dbj");
-            if (durIndex == arr7.length-1) {
-                durIndex = 0;
-            } else {
-                durIndex += 1;
-            }
-            obj.src = arr7[durIndex];
-        }
-        clearInterval(durIndex);
-window.onload=function() {
-    var oBtn = document.getElementById('btn');
-    var tel = document.getElementById('tel');
-    var names = document.getElementById('myname');
-    var oP = document.getElementsByTagName('p')[0];
-    oBtn.onclick = function () {
-        var val = document.getElementById('tel').value;
-        var my = document.getElementById('myname').value;
-        var flag = /^[0-9a-zA-Z\u4e00-\u9fa5_]{3,16}$/;
-        var reg = /^1[345678]\d{9}$/;
-        console.log(oBtn);
-        console.log(tel.value);
-        console.log(names.value);
-        if (val == '') {
-            oP.style.color = "red";
-            oP.innerHTML = "请输入手机号!";
-        } else if (reg.test(val)) {
-            oP.style.color = "green";
-            oP.innerHTML = "输入正确！";
-        } else {
-            oP.style.color = "red";
-            oP.innerHTML = "号码输入错误，请重新输入！";
-        }
-
-        var e = {
-            'name': names.value,  //姓名
-            'phone': tel.value,  //联系电话
-
+<body>
+<script>
+    window.debug = true;
+    function getInfo()  {
+        return {
+            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
         };
     }
-};
+    getInfo();
+//    console.log(document.documentElement.clientHeight ,window.innerHeight, document.body.clientHeight)
+//    document.body.style.height=window.innerHeight-0+'px';
+
+    window.onload=function() {
+        var oBtn = document.getElementById('btn');
+        var tel = document.getElementById('tel');
+        var names = document.getElementById('myname');
+        var oP = document.getElementsByTagName('p')[0];
+        oBtn.onclick = function () {
+            var val = document.getElementById('tel').value;
+            var my = document.getElementById('myname').value;
+            var flag = /^[0-9a-zA-Z\u4e00-\u9fa5_]{3,16}$/;
+            var reg = /^1[345678]\d{9}$/;
+            console.log(oBtn);
+            console.log(tel.value);
+            console.log(names.value);
+            if (val == '') {
+                oP.style.color = "red";
+                oP.innerHTML = "请输入手机号!";
+            } else if (reg.test(val)) {
+                oP.style.color = "green";
+                oP.innerHTML = "输入正确！";
+            } else {
+                oP.style.color = "red";
+                oP.innerHTML = "号码输入错误，请重新输入！";
+            }
+
+            var e = {
+                'name': names.value,  //姓名
+                'phone': tel.value,  //联系电话
+
+            };
+        }
+    };
     function loadXMLDoc(e)
     {
         var e= e;
@@ -146,131 +154,104 @@ window.onload=function() {
         xmlhttp.setRequestHeader("Content-type","application/json");
         xmlhttp.send(evev);
     }
-
+    loadXMLDoc();
 </script>
-<body class="bodybox">
-<script>
-    window.debug = true;
-</script>
-<div class="head">
-    <div class="wrap" id="wrap">
+<div class="wrap" id="wrap">
 
-        <div class="item item-1">
-            <img src="images/first.png" alt="">
-        </div>
+    <div class="item item-1">
+        <img src="images/1.png" alt="图1">
+    </div>
 
-        <div class="item item-2">
-            <img src="images/two.png" alt="#">
-        </div>
+    <div class="item item-2">
+        <img src="images/2.png" alt="图2">
+    </div>
 
-        <div class="item item-3">
-            <img src="images/three.png" alt="#">
-        </div>
+    <div class="item item-3">
+        <img src="images/3.png" alt="图3">
+    </div>
 
-        <div class="item item-4">
-            <img src="images/four.png" alt="#">
-        </div>
+    <div class="item item-4">
+        <img src="images/4.png" alt="图4">
+    </div>
 
-        <div class="item item-5">
-            <img src="images/five.png" alt="#">
-        </div>
+    <div class="item item-5">
+        <img src="images/5.png" alt="图5">
+    </div>
 
-        <div class="item item-6" style="position: relative;">
-            <ul>
-                <li class="lis">
-                    <img id = "obj" src = "images/7.png"/>
-                </li>
-            </ul>
-        </div>
+    <div class="item item-6">
+        <img src="images/6.png" alt="图6">
+    </div>
 
-        <div class="item item-7" style="position: relative;">
-            <ul>
-                <li class="lis"><img id = "abj" src = "images/5.png"/></li>
-            </ul>
-        </div>
+    <div class="item item-7">
+        <img src="images/7.png" alt="图7">
+    </div>
 
-        <div class="item item-8" style="position: relative;">
-            <ul>
-                <li class="lis"><img id = "sbj" src = "images/1.png"/></li>
-            </ul>
-        </div>
+    <div class="item item-8">
+        <img src="images/8.png" alt="图8">
+    </div>
 
-        <div class="item item-9" style="position: relative;">
-            <ul>
-                <li class="lis"><img id = "dbj" src = "images/19.png"/></li>
-            </ul>
-        </div>
+    <div class="item item-9">
+        <img src="images/9.png" alt="图9">
+    </div>
 
-        <div class="item item-10">
-            <img src="images/28.png" alt="#">
-        </div>
+    <div class="item item-10">
+        <img src="images/10.png" alt="图10">
+    </div>
 
-        <div class="item item-11">
-            <img src="images/29.png" alt="#">
-        </div>
+    <div class="item item-11">
+        <img src="images/11.png" alt="图11">
+    </div>
 
-        <div class="item item-12">
-            <img src="images/27.png" alt="#">
-        </div>
+    <div class="item item-12">
+        <img src="images/12.png" alt="图12">
+    </div>
 
-        <div class="item item-13">
-            <img src="images/35.png" alt="#">
-        </div>
+    <div class="item item-13">
+        <img src="images/13.png" alt="图13">
+    </div>
 
-        <div class="item item-14">
-            <img src="images/30.png" alt="#">
-        </div>
+    <div class="item item-14">
+        <img src="images/14.png" alt="图14">
+    </div>
 
-        <div class="item item-15">
-            <img src="images/31.png" alt="#">
-        </div>
-        <div class="item item-16">
-            <img src="images/32.png" alt="#">
-            <form action="#">
-                <div class="userName">
+    <div class="item item-15">
+        <div class="top_img"><img src="images/top.png" alt="#"></div>
+        <form action="#">
+            <div class="userName">
                 <label>姓名</label>
-                <input type="text" name="username" id="myname" /><br>
-                </div>
-                <div class="userName">
-                <label>手机号码</label>
-                    <input type="" name="" id="tel">
-                    <!--<input type="button" name="" value="确认" id="btn">-->
-
-                </div>
-                <p></p>
-                <div class="button" id="btn" onclick="loadXMLDoc()">提交</div>
-
-                <!--<input type="submit" value="登陆"/>-->
-            </form>
-
-            <div class="top_img">
-            <img src="images/33.png">
+                <input type="text" name="username" id="myname" />
             </div>
+            <div class="userName">
+                <label>手机号码</label>
+                <input type="" name="" id="tel">
+            </div>
+            <p></p>
+            <div class="button" id="btn" onclick="loadXMLDoc()">提交</div>
+        </form>
+
+        <div class="foot_img">
+            <img src="images/foot.png" height="152">
         </div>
     </div>
-
-<div class="footer" style="color: white;background: #505151;position: absolute;bottom: 0;width: 100%;">
-    <div class="qi" style="width: 100%;margin: 0 auto;overflow: hidden;">
-        <div class="ddev" style="margin-left: 15%;">点个锤子</div>
-        <div class="ddev">|  智点餐</div>
-        <div class="ddev">智能快</div>
-    </div>
-</div>
 </div>
 <script type="text/javascript" src="js/iSlider.js"></script>
-<script>
 
+<script type="text/javascript">
+
+    //demo
     //用法
     var myslider=new iSlider({
         wrap:'#wrap',
         item:'.item',
         onslide:function (index) {
-            if (index == 15) {
+            if (index == 14) {
                 document.getElementById('J_joinNum').innerHTML=parseInt(Math.random()*10000);
             }
         }
     });
-    console.info(myslider);
+    console.info(myslider)
+
+
 </script>
 </body>
 </html>
