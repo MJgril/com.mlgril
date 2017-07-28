@@ -22,8 +22,8 @@ body{margin: 0;background: #ffffff;}
 .item-15 img{width:94%;margin-top: 20px;margin-left: 4%;}
 .item-16 img{width:80%;margin-top: 5px;margin-left:10%;}
 .top_img img{
-    margin-left: 10%!important;
-    width: 85%;
+    margin-left: 12%!important;
+    width: 78%;
 }
 ul{
     height:100%!important;
@@ -35,17 +35,17 @@ ul{
     overflow: hidden;
 }
 ul li img{
-    width: 75%;
+    width: 100%;
     height: 100%;
-    border-radius: 2px;
-    margin-left: 9%;
 }
 ul li{
     list-style: none;
-    padding: 18% 0 0 0;
-    /*margin-left: 6%;*/
+    margin: 18% 0 0 8%;
     overflow:hidden;
     border-radius: 5px;
+    width: 76%;
+    /*border: 1px solid #fff;*/
+    height: 61%;
 }
 form{
     border: 1px solid #9f9f9f;
@@ -73,7 +73,7 @@ label{
 }
 input{
     border: 0;
-    width: 220px;
+    width: 200px;
     height: 99%;
 }
 .button{
@@ -107,8 +107,6 @@ input{
     to {left:100px;}
 }
 p{
-    clear: both;
-    display: block;
+    margin-top: 10px;
     font-size: 14px;
-    padding-left: 100px;
 }
