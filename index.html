@@ -76,7 +76,7 @@
             border-radius: 5px;
             line-height: 23px;
         }
-        p{
+        font{
             clear: both;
             display: block;
             font-size: 14px;
@@ -168,7 +168,7 @@
                 <label>手机号码</label>
                 <input type="" name="" id="tel">
             </div>
-            <p></p>
+            <font></font>
             <div class="button" id="btn" onclick="loadXMLDoc()">提交</div>
         </form>
         <div class="foot_img">
@@ -204,7 +204,7 @@
         var oBtn = document.getElementById('btn');
         var tel = document.getElementById('tel');
         var names = document.getElementById('myname');
-        var oP = document.getElementsByTagName('p')[0];
+        var oP = document.getElementsByTagName('font')[0];
         // oBtn.onclick = function () {
             var val = document.getElementById('tel').value;
             var my = document.getElementById('myname').value;
