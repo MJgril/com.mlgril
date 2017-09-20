@@ -1,261 +1,624 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>你家互联网科技</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <style type="text/css">
-        body{padding: 0;margin: 0;}
-        img{
-            max-width: 100%;
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <style>
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        #head{
+            width: 100%;
+            height:100%;
+            position: relative;
+            /*border: 1px solid red;*/
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 210px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+        }
+        .swiper-slide img{
+            width: 100%;
             height: 100%;
         }
-        .item{
-            overflow: hidden;
+        .swiper-container2{
+            width: 100%;
+            height: 200px;
         }
-        .item-1 img{width: 100%;height: 95%;}
-        .item-2 img{width: 100%;height: 100%;margin-top: -20px;}
-        .item-3 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
-        .item-4 img{width: 96%;height: 92%;padding-top: 15px;padding-left: 5px;}
-        .item-5 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
-        .item-6 img{width: 96%;height: 90%;padding-top: 10px;padding-left: 5px;}
-        .item-7 img{width: 91%;height: 91%;padding-top: 10px;padding-left: 16px;}
-        .item-8 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
-        .item-9 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
-        .item-10 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
-        .item-11 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 5px;}
-        .item-12 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 10px;}
-        .item-13 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 12px;}
-        .item-14 img{width: 96%;height: 90%;padding-top: 15px;padding-left: 10px;}
-        .item-15 img{width: 100%;height: 100%;overflow-y: scroll;}
-        .top_img img{
-            margin-left: 10%!important;
-            width: 85%;
-            padding-top: 10px;
+        #sos{
+            width: 100%;
+            height: 48px;
+            background-color: #1D212C;
+            clear: both;
         }
-        .foot_img img{
-            margin-left: 10%!important;
-            width: 85%;
-        }
-        form{
-            border: 1px solid #9f9f9f;
-            padding: 10px 0;
-            border-radius: 10px;
+        #sos input{
             width: 80%;
-            margin: 10px auto;
-            background-color: #f2f2f2;
-        }
-        label{
-            font-size: 18px;
-            color: #ffffff;
+            background: url("images/sou.png")no-repeat;
+            background-size: 7%;
+            background-position: 15%;
+            height: 25px;
             text-align: center;
-            padding: 2px 0;
-            width: 80px;
-            display: block;
-            float: left;
-            background-color: #404040;
-        }
-        .userName{
-            margin: 10px auto 5px auto;
-            width: 80%;
-            height: 30px;
-            border: 1px solid #9a9a9a;
-        }
-        input{
-            border: 0;
-            width: 130px;
-            background-color: #f2f2f2;
-        }
-        .button{
-            width: 20%;
-            background-color: #ff0000;
-            text-align: center;
-            margin: 0 auto;
-            color: white;
             border-radius: 5px;
-            line-height: 23px;
+            margin: 9px 8%;
+            background-color: #ffffff;
+        }
+        ::-webkit-input-placeholder{
+            font-size: 11px;
+            color: #7B7B7B;
+        }
+        .img{
+            width: 20%;
+            float: left;
+            text-align: center;
+            margin: 6px 2.5%;
+            height: 80px;
+        }
+        .img img{
+            width: 46px;
+            height: 46px;
         }
         font{
-            clear: both;
-            display: block;
-            font-size: 14px;
-            padding-left: 100px;
+            font-size: 12px;
+            color: #2F2E35;
+        }
+        #main{
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .imagesList{
+            width: 100%;
+            /*width:600px;*/
+            overflow:scroll ;
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding-bottom: 10px;
+        }
+        .imagesList ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            height: 160px;
+            width: 160%;
+        }
+        .imagesList ul li{
+            padding: 0;
+            float: left;
+            width: 131px;
+            height: 154px;
+            background: #8FBC8F;
+            margin: 5px;
+        }
+        .imagesList ul li img{
+            width: 100%;
+            height: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: #ff6666;
+            font-family: Arial;
+        }
+        .tab-container{
+            width: 100%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        /*tab-head begin*/
+        .tab-head{
+            width: 400px;
+            height:30px;
+            padding: 0;
+            margin: 0;
+            /*background: #ffcccc;*/
+            position: absolute;
+            left:0px;//这里设置-1是为了li的border与最外层的border重合
+
+        }
+        .tab-head li{
+            float:left;
+            height: 29px;
+            line-height: 29px;
+            width: 50%;
+            overflow: hidden;
+            text-align: center;
+            background: white;
+        }
+
+        li.select{
+            background: #1D212C;
+            padding: 0;
+            color: white;
+        }
+        /*tab-head end tab-panel begin*/
+        .tab-panel{
+            position: relative;
+            width: 100%;
+            height: 85%;
+            top: 5%;
+            -webkit-transition:all 0.3s linear;//切换过渡效果
+        }
+        .tab-panel section{
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        #panel-1{
+            left: 0;
+        }
+        #panel-2{
+            left: 100%;
+        }
+
+        .tab-menu{
+            width: 96%;
+            height: 92px;
+            margin: 10px auto;
+            background-color: white;
+            overflow: hidden;
+        }
+        .tab-menu .tab-left{
+            width: 70%;
+            float: left;
+            height: 94px;
             /*border: 1px solid red;*/
         }
+        .tab-menu .tab-left .top-left img{
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .tab-menu .tab-left .top-left{
+            margin-top: 5px;
+        }
+        .tab-menu .tab-right{
+            width: 30%;
+            float: left;
+            height: 94px;
+        }
+        #bg{
+            width:100%;
+            height:100%;
+            background-color:#1D212C;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:2;
+            opacity:0.5;
+            /*兼容IE8及以下版本浏览器*/
+            filter: alpha(opacity=30);
+            display:none;
+        }
+        #center{
+            width:280px;
+            height:160px;
+            background-color:#FFF;
+            margin: auto;
+            position: absolute;
+            z-index:3;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display:none;
+            text-align: center;
+        }
+        #log_window{
+            border-top: 1px solid #eeeeee;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+            padding: 5px 0 0 0;
+        }
+        #log_window a{
+            text-decoration: none;
+        }
+        .button{
+            text-align: center;
+            display: block;
+            /*width: 61px;*/
+            background: #ffffff;
+            padding: 0 5px;
+            margin: 5px 10px 0px 25px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+        }
+        #foot{
+            position: fixed;
+            bottom:0;
+            width: 100%;
+            /*top: 100px;*/
+            /*height: 50px;*/
+            border-top: 1px solid #eeece4;
+            background: #ffffff;
+            /*border: 1px solid red;*/
+        }
+        #foot .benrlist,#foot .myinfo{
+            width: 50%;
+            float: left;
+            text-align: center;
+            padding: 10px 0 5px 0;
+        }
+        #foot .benrlist img{
+            width: 26px;
+            height: 17px;
+        }
+        #foot .myinfo img{
+            width: 22px;
+            height: 22px;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #424242!important;
+        }
     </style>
+    <script>
+        function shield(){
+            var s = document.getElementById("bg");
+            s.style.display = "block";
+
+            var l = document.getElementById("center");
+            l.style.display = "block";
+        }
+    </script>
 </head>
 <body>
-<script>
-    window.debug = true;
-    function getInfo()  {
-        return {
-            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-        };
-    }
-    getInfo();
-    //    console.log(document.documentElement.clientHeight ,window.innerHeight, document.body.clientHeight)
-    //    document.body.style.height=window.innerHeight-0+'px';
-    
-</script>
-<div class="wrap" id="wrap">
+<div id="head">
 
-    <div class="item item-1">
-        <img src="images/1.png" alt="图1">
-    </div>
-
-    <div class="item item-2">
-        <img src="images/2.png" alt="图2">
-    </div>
-
-    <div class="item item-3">
-        <img src="images/3.png" alt="#">
-    </div>
-
-    <div class="item item-4">
-        <img src="images/4.png" alt="图4">
-    </div>
-
-    <div class="item item-5">
-        <img src="images/5.png" alt="图5">
-    </div>
-
-    <div class="item item-6">
-        <img src="images/6.png" alt="图6">
-    </div>
-
-    <div class="item item-7">
-        <img src="images/7.png" alt="图7">
-    </div>
-
-    <div class="item item-8">
-        <img src="images/8.png" alt="图8">
-    </div>
-
-    <div class="item item-9">
-        <img src="images/9.png" alt="图9">
-    </div>
-
-    <div class="item item-10">
-        <img src="images/10.png" alt="图10">
-    </div>
-
-    <div class="item item-11">
-        <img src="images/11.png" alt="图11">
-    </div>
-
-    <div class="item item-12">
-        <img src="images/12.png" alt="图12">
-    </div>
-
-    <div class="item item-13">
-        <img src="images/13.png" alt="图13">
-    </div>
-
-    <div class="item item-14">
-        <img src="images/14.png" alt="图14">
-    </div>
-
-    <div class="item item-15">
-        <div class="top_img"><img src="images/top.png" alt="#"></div>
-        <form action="#">
-            <div class="userName">
-                <label>姓名</label>
-                <input type="text" name="username" id="myname" />
-            </div>
-            <div class="userName">
-                <label>手机号码</label>
-                <input type="" name="" id="tel">
-            </div>
-            <font></font>
-            <div class="button" id="btn" onclick="loadXMLDoc()">提交</div>
-        </form>
-        <div class="foot_img">
-            <img src="images/foot.png">
+<!-- Swiper -->
+<div class="swiper-container swiper-container1">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide list">
+            <img src="images/1.png" alt="#">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/2.png" alt="#">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/3.png" alt="#">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/4.png" alt="#">
         </div>
     </div>
+    <div class="swiper-pagination swiper-p1"></div>
+</div>
+
+<form action="" method="get">
+    <div id="sos">
+        <a href="Search.html"><input type="text" placeholder="搜一搜，看看哪些大牌有优惠吧"></a>
     </div>
-    <div class="footer" style="position: absolute;bottom: 0;width: 100%;height: 35px;">
-        <img src="images/footer.png" alt="#" style="width: 100%;">
+</form>
+    <div style="width: 100%;height: 30px;margin: 0px 0;background: white;text-align: center;padding: 10px 0;">
+        <img src="images/brandMuseum.png" alt="" style="width: 92px;height: 30px;vertical-align: middle;">
+        <a href="Moreshops.html" STYLE="text-decoration: underline;color: #1a1a1a;font-size: 13px;position:relative;left: 100px;">更多</a>
     </div>
+<!-- Swiper -->
+<div class="swiper-container swiper-container2">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="width: 100%;">
+            <div class="img" onclick="window.location.href='Designatedmerchant.html'">
+                <img src="images/bag.png" alt="#"><br/>
+                <font>肯得基</font>
+            </div>
+            <div class="img">
+                <img src="images/bagtx.png" alt="#"><br/>
+                <font>同湘会</font>
+            </div>
+            <div class="img">
+                <img src="images/bagxc.png" alt="#"><br/>
+                <font>喜茶</font>
+            </div>
+            <div class="img">
+                <img src="images/bagyj.png" alt="#"><br/>
+                <font>遇见小面</font>
+            </div>
+            <div class="img">
+                <img src="images/bagbs.png" alt="#"><br/>
+                <font>炳胜</font>
+            </div>
+            <div class="img">
+                <img src="images/xbk.png" alt="#"><br/>
+                <font>星巴克</font>
+            </div>
+            <div class="img">
+                <img src="images/m.png" alt="#"><br/>
+                <font>麦当劳</font>
+            </div>
+            <div class="img">
+                <img src="images/coco.png" alt="#"><br/>
+                <font>coco都可</font>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+                <img src="images/lp.png" alt="#"><br/>
+                <font>良品铺子</font>
+            </div>
+            <div class="img">
+                <img src="images/lod.png" alt="#"><br/>
+                <font>老港记</font>
+            </div>
+            <div class="img">
+                <img src="images/zhy.png" alt="#"><br/>
+                <font>周黑鸭</font>
+            </div>
+            <div class="img">
+                <img src="images/711.png" alt="#"><br/>
+                <font>711</font>
+            </div>
+            <div class="img">
+                <img src="images/bagwpj.png" alt="#"><br/>
+                <font>外婆家</font>
+            </div>
+            <div class="img">
+                <img src="images/hanbaowang.png" alt="#"><br/>
+                <font>汉堡王</font>
+            </div>
+            <div class="img">
+                <img src="images/huangtea.png" alt="#"><br/>
+                <font>皇茶</font>
+            </div>
+            <div class="img">
+                <img src="images/bagpz.png" alt="#"><br/>
+                <font>披萨</font>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="img">
+            <img src="images/fwsgm.png" alt="#"><br/>
+            <font>风味手擀面</font>
+            </div>
+            <div class="img">
+                <img src="images/mlxg.png" alt="#"><br/>
+                <font>麻辣香锅</font>
+            </div>
+            <div class="img">
+                <img src="images/sgkr.png" alt="#"><br/>
+                <font>三国烤肉</font>
+            </div>
+            <div class="img">
+                <img src="images/ty.png" alt="#"><br/>
+                <font>探鱼</font>
+            </div>
+            <div class="img">
+                <img src="images/wld.png" alt="#"><br/>
+                <font>味立得</font>
+            </div>
+            <div class="img">
+                <img src="images/xx.png" alt="#"><br/>
+                <font>匠任匠心</font>
+            </div>
+            <div class="img">
+                <img src="images/ybx.png" alt="#"><br/>
+                <font>渝品香</font>
+            </div>
+            <div class="img">
+                <img src="images/yxl.png" alt="#"><br/>
+                <font>悦香楼</font>
+            </div></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-p2"></div>
+</div>
 
-<script type="text/javascript" src="js/iSlider.js"></script>
 
-<script type="text/javascript">
+<div id="main">
+    <div class="imagesList">
+        <ul>
+            <li style="margin-left: 20px;"><img src="images/hot.png" alt="#" onclick="window.location.href='Couponlist.html'"></li>
+            <li><img src="images/star.png" alt="#"></li>
+            <li><img src="images/counp.png" alt="#"></li>
+        </ul>
 
-    //demo
-    //用法
-    var myslider=new iSlider({
-        wrap:'#wrap',
-        item:'.item',
-        onslide:function (index) {
-            if (index == 14) {
-                document.getElementById('J_joinNum').innerHTML=parseInt(Math.random()*10000);
-            }
-        }
+    </div>
+</div>
+<div class="tab-container">
+    <ul class="tab-head">
+        <li id="1" class="select" onmouseover="$(this)">附近</li>
+        <li id="2" onmouseover="$(this)">人气</li>
+    </ul>
+    <div id="tab-panel" class="tab-panel">
+        <section id="panel-1">
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/txhlogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">同湘会</span>
+                        <span style="font-size: 12px;color: white;background-color: #E36C54;padding: 2px 5px;text-align: center;">满减券</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">满280.00元使用（节假日不可使用）</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><500m</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg1.png)no-repeat;background-size: 100%;text-align: right;">
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
+                    <span style="display: block;font-size: 13px;color: #ffffff;line-height: 20px;padding-right: 10px;">1000人已领取</span>
+                    <div class="button" style="color: #ADADAD;">已领取</div>
+                </div>
+            </div>
+
+            <div class="tab-menu" onclick="shield()">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/kdjlogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">肯德基</span>
+                        <span style="font-size: 12px;color: white;background-color: #64A23E;padding: 2px 5px;text-align: center;">代金券</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">满100元使用（每单限使用1张代金券）</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><1km</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg3.png)no-repeat;background-size: 100%;text-align: right;" >
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
+                    <span style="display: block;font-size: 13px;color: #ffffff;line-height: 20px;padding-right: 10px;">280人已领</span>
+                    <div class="button" onclick="shield()" style="color: #64A23E;">立刻领取</div>
+                </div>
+            </div>
+
+
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/yjlogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">遇见小面</span>
+                        <span style="font-size: 12px;color: white;background-color: #E6A016;padding: 2px 5px;text-align: center;">折扣券</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">全场菜品3折（酒水除外）</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><748m</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg2.png)no-repeat;background-size: 100%;text-align: right;" >
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0">3<font style="font-size: 12px;color: white;line-height: 25px">&nbsp;折</font></span>
+                    <span style="display: block;font-size: 13px;color: #ffffff;line-height: 20px;padding-right: 10px;">1000人已领取</span>
+                    <div class="button" style="color: #E6A016;">立刻领取</div>
+                </div>
+            </div>
+
+
+
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/xclogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">喜茶</span>
+                        <span style="font-size: 12px;color: white;background-color: #EAA086;padding: 2px 5px;text-align: center;">免排队</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">节假日不可使用</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><1.5km</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg4.png)no-repeat;background-size: 100%;text-align: right;" >
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
+                    <span style="display: block;font-size: 12px;color: #ffffff;line-height: 20px;padding-right: 10px;">800人已领</span>
+                    <div class="button" style="color: #EAA086;">立刻领取</div>
+                </div>
+            </div>
+
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/bslogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">炳胜</span>
+                        <span style="font-size: 12px;color: white;background-color: #E36C54;padding: 2px 5px;text-align: center;">满减券</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">满100元使用（使用日期：2017.12.31前）</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><2.2km</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg5.png)no-repeat;background-size: 100%;text-align: right;" >
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
+                    <span style="display: block;font-size: 12px;color: #ffffff;line-height: 20px;padding-right: 10px;">2000人已领</span>
+                    <div class="button" style="color: #E36C54;">立刻领取</div>
+                </div>
+            </div>
+        </section>
+        <section id="panel-2">
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/bslogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">炳胜</span>
+                        <span style="font-size: 12px;color: white;background-color: #E36C54;padding: 2px 5px;text-align: center;">满减券</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">满100元使用（使用日期：2017.12.31前）</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><2.2km</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg5.png)no-repeat;background-size: 100%;text-align: right;" >
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
+                    <span style="display: block;font-size: 12px;color: #ffffff;line-height: 20px;padding-right: 10px;">2000人已领</span>
+                    <div class="button" style="color: #E36C54;">立刻领取</div>
+                </div>
+            </div>
+
+            <div class="tab-menu">
+                <div class="tab-left">
+                    <div class="top-left">
+                        <img src="images/xclogo.png" alt="#"/>
+                        <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">喜茶</span>
+                        <span style="font-size: 12px;color: white;background-color: #EAA086;padding: 2px 5px;text-align: center;">免排队</span>
+                    </div>
+                    <p style="color: #989898;font-size: 12px;line-height: 20px;padding-left: 15px;">节假日不可使用</p>
+                    <p style="color: #989898;font-size: 12px;padding-left: 15px;"><1.5km</p>
+                </div>
+
+                <div class="tab-right" style="background: url(images/bg4.png)no-repeat;background-size: 100%;text-align: right;" >
+                    <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
+                    <span style="display: block;font-size: 12px;color: #ffffff;line-height: 20px;padding-right: 10px;">800人已领</span>
+                    <div class="button" style="color: #EAA086;">立刻领取</div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+<div id="bg"></div>
+<div id="center">
+    <span style="font-size: 20px;font-weight: bold;display: block;padding: 10px 0;line-height: 35px;">成功领取</span>
+    <span style="line-height: 35px;color: #5F5F5F;font-size: 12px;">打开“微信—我—卡包”，查看优惠券</span>
+    <div id="log_window">
+        <a href="Already.html">确定</a>
+    </div>
+</div >
+</div>
+<div id="foot">
+    <div class="benrlist">
+        <img src="images/ben-active.png"/>
+        <span style="font-size: 13px; color: #AD9846;display: block;margin-top: 5px;">优惠券</span>
+    </div>
+    <div class="myinfo" onClick="window.location.href='myInfo.html'">
+        <img src="images/my.png"/>
+       <span style="color: #7D7D7D;font-size: 13px;display: block;">我的</span>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container1',{
+        pagination: '.swiper-p1',
+        loop:false,
+        grabCursor: true,
+        paginationClickable: true,
+        autoplay: 3000
     });
-    console.info(myslider)
-    // window.onload=function() {
-      
-    // };
-    function loadXMLDoc()
-    {
-        var oBtn = document.getElementById('btn');
-        var tel = document.getElementById('tel');
-        var names = document.getElementById('myname');
-        var oP = document.getElementsByTagName('font')[0];
-        // oBtn.onclick = function () {
-            var val = document.getElementById('tel').value;
-            var my = document.getElementById('myname').value;
-            var flag = /^[0-9a-zA-Z\u4e00-\u9fa5_]{3,16}$/;
-            var reg = /^1[345678]\d{9}$/;
-            console.log(oBtn);
-            console.log(tel.value);
-            console.log(names.value);
-            if (val == '') {
-                oP.style.color = "red";
-                oP.innerHTML = "请输入手机号!";
-                return false;
-            } else if (reg.test(val)) {
-                oP.style.color = "green";
-                oP.innerHTML = "输入正确！";
-            } else {
-                oP.style.color = "red";
-                oP.innerHTML = "号码输入错误，请重新输入！";
-                return false;
-            }
 
-            var e = {
-                'name': names.value,  //姓名
-                'phone': tel.value,  //联系电话
-
-            };
-        // }
-        // var e= e;
-        var evev=JSON.stringify(e);
-        var xmlhttp;
-        if (window.XMLHttpRequest)
-        {
-            xmlhttp=new XMLHttpRequest();
-        }
-        else
-        {// code for IE6, IE5
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange=function()
-        {
-            if (xmlhttp.readyState==4 && xmlhttp.status==200)
-            {
-                console.log(xmlhttp);
-                document.getElementById("tel").innerHTML=xmlhttp.responseText;
-            }
+    var swiper2 = new Swiper('.swiper-container2', {
+        pagination: '.swiper-p2',
+        slidesPerView: 1,
+        grabCursor: true,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    function $(id){
+        var lis = document.getElementsByTagName('li');
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].setAttribute('class','');
         };
-        xmlhttp.open("POST","https://dev.nihome.cn/cooperation/apply",true);
-        xmlhttp.setRequestHeader("Content-type","application/json");
-        xmlhttp.send(evev);
-        oP.style.color = "green";
-        oP.innerHTML = "成功提交！";
+        id.setAttribute('class','select');
+        var ele = document.getElementById('tab-panel');
+        ele.style.left=-(id.id-1)+'00%';
     }
 </script>
 </body>
