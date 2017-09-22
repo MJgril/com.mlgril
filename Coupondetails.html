@@ -8,12 +8,18 @@
         body{
             background-color: #EDEDED;
         }
-        .tab-menu,.main{
+        #head{
             width: 100%;
+            border: 1px solid red;
+        }
+        .tab-menu,.main{
+            /*width: 100%;*/
+            width: 96%;
             height: 94px;
             margin: 10px auto;
             background-color: white;
             overflow: hidden;
+            border: 1px solid red;
         }
         .tab-menu .tab-left{
             width: 70%;
@@ -112,6 +118,7 @@
     </script>
 </head>
 <body>
+<div id="head">
 <div class="tab-menu">
     <div class="tab-left">
         <div class="top-left">
@@ -125,7 +132,7 @@
     <div class="tab-right">
         <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>88</span>
         <span style="display: block;font-size: 13px;color: #ffffff;line-height: 20px;padding-right: 10px;">1000人已领取</span>
-        <div class="button" onclick="shield()">立刻领取</div>
+        <div class="button" onclick="shield()" style="color: #E36C54;">立刻领取</div>
     </div>
 </div>
 
@@ -149,7 +156,7 @@
         <p> 7.节假日不可用</p>
     </div>
 </div>
-
+</div>
 <div id="bg"></div>
 <div id="center">
     <span style="font-size: 20px;font-weight: bold;display: block;padding: 10px 0;line-height: 35px;">成功领取</span>
@@ -158,5 +165,6 @@
         <a href="Coupondetails.html">确定</a>
     </div>
 </div>
+
 </body>
 </html>
