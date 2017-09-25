@@ -239,6 +239,7 @@
             position: fixed;
             bottom:0;
             width: 100%;
+            z-index: 9999;
             /*top: 100px;*/
             /*height: 50px;*/
             border-top: 1px solid #eeece4;
@@ -274,10 +275,10 @@
         }
         function btn() {
             var bg = document.getElementById("bg");
-            s.style.display = "none";
+            bg.style.display = "none";
 
-            var l = document.getElementById("center");
-            l.style.display = "none";
+            var center = document.getElementById("center");
+            center.style.display = "none";
         }
     </script>
 </head>
@@ -295,6 +296,9 @@
             </div>
             <div class="swiper-slide">
                 <img src="images/3.png" alt="#">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/4.png" alt="#">
             </div>
         </div>
         <div class="swiper-pagination swiper-p1"></div>
@@ -424,6 +428,8 @@
             <div class="banner" style="margin-left: 20px;"><img src="images/hot.png" alt="#" onclick="window.location.href='Couponlist.html'"></div>
             <div class="banner" onclick="window.location.href='Star.html'"><img src="images/star.png" alt="#"></div>
             <div class="banner" onclick="window.location.href='favorable.html'"><img src="images/counp.png" alt="#"></div>
+
+
         </div>
     </div>
     <div id="tab-container">
@@ -736,9 +742,9 @@
         <span style="font-size: 20px;font-weight: bold;display: block;padding: 10px 0;line-height: 35px;">成功领取</span>
         <span style="line-height: 35px;color: #5F5F5F;font-size: 12px;">打开“微信—我—卡包”，查看优惠券</span>
 
-        <a href="index.html#tab-container">
-            <div id="log_window">确定</div>
-        </a>
+        <!--<a href="index.html#tab-container">-->
+            <div id="log_window" onclick="btn()">确定</div>
+        <!--</a>-->
     </div >
 </div>
 <div id="foot">
