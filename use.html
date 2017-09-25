@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <title>优惠券详情</title>
+    <title>优惠券</title>
     <style>
         body{
             background-color: #EDEDED;
@@ -34,38 +33,15 @@
         .tab-menu .tab-right{
             width: 30%;
             float: left;
-            background: url("images/bg5.png")no-repeat;
+            background: url("images/bg1.png")no-repeat;
             background-size: 100%;
             text-align: right;
             height: 94px;
         }
-
-
-        .button{
-            text-align: center;
-            display: block;
-            background: #ffffff;
-            color: #E6A016;
-            /*padding: 0 5px;*/
-            margin: 5px 10px 0px 20px;
-            border: 1px solid #ffffff;
-            border-radius: 3px;
-        }
-        p{
-            font-size: 12px;
-            color: #5E5E5E;
-        }
-        .foot{
-            width: 100%;
-            height: 206px;
-            margin: 10px auto;
-            background-color: white;
-            overflow: hidden;
-        }
         #bg{
             width:100%;
             height:100%;
-            background-color:#1D212C;
+            background-color:#000;
             position:absolute;
             top:0;
             left:0;
@@ -89,32 +65,34 @@
             display:none;
             text-align: center;
         }
-        #log_window{
-            border-top: 1px solid #eeeeee;
-            text-align: center;
-            margin-top: 30px;
-            font-size: 18px;
-            padding: 5px 0 0 0;
-        }
+
         #log_window a{
             text-decoration: none;
-            color: #1a1a1a;
+        }
+        .button{
+            text-align: center;
+            display: block;
+            width: 61px;
+            background: #ffffff;
+            color: #E6A016;
+            padding: 0 5px;
+            margin: 5px 10px 0px 23px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+        }
+        p{
+            font-size: 12px;
+            color: #5E5E5E;
+        }
+        .foot{
+            width: 100%;
+            height: 206px;
+            margin: 10px auto;
+            background-color: white;
+            overflow: hidden;
         }
     </style>
     <script>
-        function shield(){
-            var s = document.getElementById("bg");
-            s.style.display = "block";
-
-            var l = document.getElementById("center");
-            l.style.display = "block";
-        }
-        $(function () {
-            $('#center').click(function () {
-                $('#bg').css("display","none");
-                $('#center').css("display","none");
-            })
-        })
     </script>
 </head>
 <body>
@@ -131,7 +109,7 @@
     <div class="tab-right">
         <span style="font-size: 21px;color: white;display: block;padding-right: 10px;margin: 4px 0"><font style="font-size: 12px;color: white;line-height: 25px">￥</font>68</span>
         <span style="display: block;font-size: 13px;color: #ffffff;line-height: 20px;padding-right: 10px;">1000人已领取</span>
-        <div class="button" style="color: #E36C54;" onclick="shield()">立刻领取</div>
+        <div class="button" style="color: #ADADAD;">已使用</div>
     </div>
 </div>
 
@@ -156,12 +134,5 @@
     </div>
 </div>
 
-<div id="bg"></div>
-<div id="center">
-    <span style="font-size: 20px;font-weight: bold;display: block;padding: 10px 0;line-height: 35px;">成功领取</span>
-    <span style="line-height: 35px;color: #5F5F5F;font-size: 12px;">打开“微信—我—卡包”，查看优惠券</span>
-    <div id="log_window">确定</div>
-</div >
-<div class="black" style="text-align: center;margin: 10% 0;"><img src="images/black.png" alt="" style="width: 130px;height: 40px;"></div>
 </body>
 </html>

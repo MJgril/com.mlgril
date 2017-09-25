@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="js/jquery-3.2.1.min.js"></script>
     <title>最优惠</title>
     <style>
         body{
@@ -94,14 +95,19 @@
             var l = document.getElementById("center");
             l.style.display = "block";
         }
-
+        $(function () {
+            $('#center').click(function () {
+                $('#bg').css("display","none");
+                $('#center').css("display","none");
+            })
+        })
     </script>
 </head>
 <body>
 <div id="for5" >
     <div class="menu" onclick="shield()">
-        <div class="tab-left">
-            <div class="top-left">
+        <div class="tab-left" onclick="window.location.href='Coupondetails.html'">
+            <div class="top-left" >
                 <img src="images/kdjlogo.png" alt="#"/>
                 <span style="color: #010C19;font-size: 18px;font-weight: 500;margin: 0 8px">肯德基</span>
                 <span style="font-size: 12px;color: white;background-color: #E36C54;padding: 2px 5px;text-align: center;">代金券</span>
